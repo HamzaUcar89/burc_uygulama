@@ -1,63 +1,41 @@
 {
   "project_info": {
-    "project_number": "695176998694",
-    "project_id": "biletuygulamasi",
-    "storage_bucket": "biletuygulamasi.appspot.com"
+    "project_number": "730913741901",
+    "project_id": "narveri-f6587",
+    "storage_bucket": "narveri-f6587.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:695176998694:android:a60ebd76bc685dde8f1be7",
+        "mobilesdk_app_id": "1:730913741901:android:146392f016ac6439d41004",
         "android_client_info": {
           "package_name": "com.example.biletuygulama"
         }
       },
       "oauth_client": [
         {
-          "client_id": "695176998694-ssmic9g2p9qrkr9ea3e35ucireko4d9r.apps.googleusercontent.com",
+          "client_id": "730913741901-kj4urbd9uugj3hfjm8bmggc0nk6fb78e.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCsdKTfVU2FlExMzrI-aCMMD5OHflnUB3Q"
+          "current_key": "AIzaSyAV06tvN8LxNA-8mk-n3oy3Vhketvj-Aks"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "695176998694-ssmic9g2p9qrkr9ea3e35ucireko4d9r.apps.googleusercontent.com",
+              "client_id": "730913741901-kj4urbd9uugj3hfjm8bmggc0nk6fb78e.apps.googleusercontent.com",
               "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:695176998694:android:0618b4d55e404e538f1be7",
-        "android_client_info": {
-          "package_name": "com.example.snemabilet"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "695176998694-ssmic9g2p9qrkr9ea3e35ucireko4d9r.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCsdKTfVU2FlExMzrI-aCMMD5OHflnUB3Q"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
+            },
             {
-              "client_id": "695176998694-ssmic9g2p9qrkr9ea3e35ucireko4d9r.apps.googleusercontent.com",
-              "client_type": 3
+              "client_id": "730913741901-887c50cmor0fs5uatkt4aq2amdhittij.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.biletuygulama"
+              }
             }
           ]
         }

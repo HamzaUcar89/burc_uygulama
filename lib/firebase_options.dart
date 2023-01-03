@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -49,23 +43,40 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyCf5if9QJemPg3_mKhyqQXuR-rIMg7c6Tg',
+    appId: '1:730913741901:web:43c24f16709c3f9cd41004',
+    messagingSenderId: '730913741901',
+    projectId: 'narveri-f6587',
+    authDomain: 'narveri-f6587.firebaseapp.com',
+    storageBucket: 'narveri-f6587.appspot.com',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCj4Q4JlnQOuUV4orMbcfrqcbsnxUxPXNI',
-    appId: '1:294535765390:android:161cf8661430603f5718df',
-    messagingSenderId: '294535765390',
-    projectId: 'ticked-4168d',
-    databaseURL: 'https://ticked-4168d-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'ticked-4168d.appspot.com',
+    apiKey: 'AIzaSyAV06tvN8LxNA-8mk-n3oy3Vhketvj-Aks',
+    appId: '1:730913741901:android:146392f016ac6439d41004',
+    messagingSenderId: '730913741901',
+    projectId: 'narveri-f6587',
+    storageBucket: 'narveri-f6587.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyClMF7ihKQT5I5srO8svDyg93ttdDhbX44',
-    appId: '1:294535765390:ios:7a0901431a5691405718df',
-    messagingSenderId: '294535765390',
-    projectId: 'ticked-4168d',
-    databaseURL: 'https://ticked-4168d-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'ticked-4168d.appspot.com',
-    iosClientId: '294535765390-99mc1s09elrh4igk5t1d4g10bab59qv7.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBNROfSV_tbkIlUok8HKA2VCGWXifvHwvk',
+    appId: '1:730913741901:ios:67aee12879095447d41004',
+    messagingSenderId: '730913741901',
+    projectId: 'narveri-f6587',
+    storageBucket: 'narveri-f6587.appspot.com',
+    iosClientId: '730913741901-887c50cmor0fs5uatkt4aq2amdhittij.apps.googleusercontent.com',
+    iosBundleId: 'com.example.biletuygulama',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyBNROfSV_tbkIlUok8HKA2VCGWXifvHwvk',
+    appId: '1:730913741901:ios:67aee12879095447d41004',
+    messagingSenderId: '730913741901',
+    projectId: 'narveri-f6587',
+    storageBucket: 'narveri-f6587.appspot.com',
+    iosClientId: '730913741901-887c50cmor0fs5uatkt4aq2amdhittij.apps.googleusercontent.com',
     iosBundleId: 'com.example.biletuygulama',
   );
 }
