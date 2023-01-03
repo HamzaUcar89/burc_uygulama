@@ -1,62 +1,32 @@
-
-import 'package:biletuygulama/nav/homepage.dart';
-import 'package:biletuygulama/nav/profile.dart';
-import 'package:biletuygulama/nav/burçlar.dart';
 import 'package:flutter/material.dart';
-import 'package:rolling_bottom_bar/rolling_bottom_bar.dart';
-import 'package:rolling_bottom_bar/rolling_bottom_bar_item.dart';
 
 
 
 class Nav extends StatefulWidget {
-  Nav({Key ?key}) : super(key: key);
+  const Nav({Key? key}) : super(key: key);
 
   @override
-  _NavState createState() => _NavState();
+  State<Nav> createState() => _NavState();
 }
 
 class _NavState extends State<Nav> {
-  final _controller = PageController();
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Column(
+      children:<Widget> [
 
-      body: PageView(
-        controller: _controller,
-        children: <Widget>[
-          ActivityPage(),
-          HomePage(),
-          ProfilePage(),
-        ],
-      ),
-      extendBody: true,
-      bottomNavigationBar: RollingBottomBar(color: Colors.blue
-        ,
-        controller: _controller,
-        flat: true,
-        useActiveColorByDefault: false,
-        items: [
-          RollingBottomBarItem(Icons.star_half_outlined, label: 'Burçlar', activeColor: Colors.white),
+        Container(child: Image.asset("assets/images/back.png",),),
 
-          RollingBottomBarItem(Icons.home, label: 'AnaSayfa', activeColor: Colors.white),
-          RollingBottomBarItem(Icons.person, label: 'Profilim', activeColor: Colors.white),
-        ],
-        enableIconRotation: true,
-        onTap: (index) {
-          _controller.animateToPage(
-            index,
-            duration: const Duration(milliseconds: 400),
-            curve: Curves.easeOut,
-          );
-        },
-      ),
+        Row(
+          children:<Widget> [
+            Image.asset("assets/images/iletisim.png",width: 200,height: 350,),
+            Image.asset("assets/images/hakkımızda.png",width: 200,height: 350,),
+
+          ],
+
+        )
+
+      ],
     );
   }
 }

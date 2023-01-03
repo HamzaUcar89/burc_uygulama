@@ -16,7 +16,7 @@ class Signup extends StatelessWidget {
           // logo
           Column(
             children: [
-              Image.asset("assets/images/pngwing.com.png",height: 200,width: 250,),
+              Image.asset("assets/images/narveri.png",height: 200,width: 250,),
             ],
           ),
           SizedBox(height: 30),

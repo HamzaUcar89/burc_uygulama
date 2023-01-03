@@ -17,8 +17,11 @@ class Login extends StatelessWidget {
           // logo
           Column(
             children: [
-              Image.asset("assets/images/pngwing.com.png",width: 400,height: 200,),
-              SizedBox(height: 50),
+              Padding(
+                padding: const EdgeInsets.only(left:8.0,right: 8.0),
+                child: Image.asset("assets/images/narveri.png"),
+              ),
+              SizedBox(height: 80),
               Text(
                 'Hoşgeldiniz',
                 style: TextStyle(fontSize: 24,color: Colors.black),
@@ -41,7 +44,7 @@ class Login extends StatelessWidget {
             children: <Widget>[
               SizedBox(width: 70),
               Text('Hesabın Yok Mu ?',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.blue)),SizedBox(width: 15,),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.black)),SizedBox(width: 15,),
               GestureDetector(
                 onTap: () {
                   // Navigator.pushNamed(context, '/signup');
@@ -49,7 +52,7 @@ class Login extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => Signup()));
                 },
                 child: Text('Kayıt ol !!',
-                    style: TextStyle(fontSize: 20, color: Colors.black)),
+                    style: TextStyle(fontSize: 20, color: Colors.red)),
               )
             ],
           ),
@@ -86,9 +89,9 @@ class _LoginFormState extends State<LoginForm> {
           // email
           TextFormField(
             // initialValue: 'Input text',
-            decoration: InputDecoration(iconColor: Colors.blue,
-              prefixIcon: Icon(Icons.email_outlined,color: Colors.blue,),
-              labelText: 'E-posta',labelStyle: TextStyle(color: Colors.blue),
+            decoration: InputDecoration(iconColor: Colors.red,
+              prefixIcon: Icon(Icons.email_outlined,color: Colors.red,),
+              labelText: 'E-posta',labelStyle: TextStyle(color: Colors.red),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.all(
                   const Radius.circular(100.0),
@@ -114,8 +117,8 @@ class _LoginFormState extends State<LoginForm> {
             // initialValue: 'Input text',
             decoration: InputDecoration(
               labelText: 'Şifre',
-              labelStyle: TextStyle(color: Colors.blue),
-              prefixIcon: Icon(Icons.lock_outlined,color: Colors.blue,),
+              labelStyle: TextStyle(color: Colors.red),
+              prefixIcon: Icon(Icons.lock_outlined,color: Colors.red,),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.all(
                   const Radius.circular(100.0),
@@ -178,7 +181,7 @@ class _LoginFormState extends State<LoginForm> {
                       borderRadius: BorderRadius.all(Radius.circular(24.0)))),
               child: Text(
                 'Giriş Yap',
-                style: TextStyle(fontSize: 26,color: Colors.blue),
+                style: TextStyle(fontSize: 26,color: Colors.red),
               ),
             ),
           ),
