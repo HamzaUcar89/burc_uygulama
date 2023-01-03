@@ -42,7 +42,7 @@ class Signup extends StatelessWidget {
                       },
 
                       child: Text(' Giriş Yap',
-                          style: TextStyle(fontSize: 20, color: Colors.blue)),
+                          style: TextStyle(fontSize: 20, color: Colors.red)),
                     )
                   ],
                 )
@@ -60,11 +60,11 @@ class Signup extends StatelessWidget {
       width: 80,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(10)),
-          color: Colors.blue),
+          color: Colors.red),
       child: Center(
         child: Text(
           "T",
-          style: TextStyle(color: Colors.blue, fontSize: 60.0),
+          style: TextStyle(color: Colors.red, fontSize: 60.0),
         ),
       ),
     );
@@ -109,8 +109,8 @@ class _SignupFormState extends State<SignupForm> {
             decoration: InputDecoration(
 
                 labelText: 'E-posta',
-                labelStyle: TextStyle(color: Colors.blue),
-                prefixIcon: Icon(Icons.email_outlined,color: Colors.blue,),
+                labelStyle: TextStyle(color: Colors.red),
+                prefixIcon: Icon(Icons.email_outlined,color: Colors.red,),
                 border: border),
             validator: (value) {
               if (value!.isEmpty) {
@@ -132,8 +132,8 @@ class _SignupFormState extends State<SignupForm> {
             decoration: InputDecoration(
               labelText: 'Şifre',
 
-              labelStyle: TextStyle(color: Colors.blue),
-              prefixIcon: Icon(Icons.lock_outlined,color: Colors.blue,),
+              labelStyle: TextStyle(color: Colors.red),
+              prefixIcon: Icon(Icons.lock_outlined,color: Colors.red,),
               border: border,
               suffixIcon: GestureDetector(
                 onTap: () {
@@ -163,8 +163,8 @@ class _SignupFormState extends State<SignupForm> {
           TextFormField(
             decoration: InputDecoration(
               labelText: 'Şifre(Tekrar)',
-              labelStyle: TextStyle(color: Colors.blue),
-              prefixIcon: Icon(Icons.lock_outlined,color: Colors.blue,),
+              labelStyle: TextStyle(color: Colors.red),
+              prefixIcon: Icon(Icons.lock_outlined,color: Colors.red,),
               border: border,
             ),
             obscureText: true,
@@ -180,8 +180,8 @@ class _SignupFormState extends State<SignupForm> {
           // name
           TextFormField(
             decoration: InputDecoration(
-              labelStyle: TextStyle(color: Colors.blue),
-              prefixIcon: Icon(Icons.account_circle,color: Colors.blue,),
+              labelStyle: TextStyle(color: Colors.red),
+              prefixIcon: Icon(Icons.account_circle,color: Colors.red,),
               labelText: 'İsim - Soyisim',
 
               border: border,
@@ -243,7 +243,7 @@ class _SignupFormState extends State<SignupForm> {
                   });
                 }
               },
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.blue,
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.red,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(24.0)))),
               child: Text('Kayıt Ol',style: TextStyle(color: Colors.black,fontSize:22),),

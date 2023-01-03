@@ -43,8 +43,8 @@ dependencies:
   circular_reveal_animation: ^2.0.1
   rolling_bottom_bar: ^0.2.2
   simple_animations: ^2.2.1
-  url_launcher: ^6.1.6
   card_swiper: ^2.0.4
+  url_launcher: ^6.1.7
 
 dev_dependencies:
   flutter_test:
